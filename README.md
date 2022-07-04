@@ -1,7 +1,7 @@
 Code for *Continual Stereo Matching of Continuous Driving Scenes with Growing Architecture*, accepted as ORAL at CVPR 2022.
 
 **Reusable Architecture Growth**
-![](https://img-blog.csdnimg.cn/b52c92db4cdb4a18b543dd397d50e813.png#pic_center)
+![](./images/rag_framework.PNG)
 
 **Abstract**
 

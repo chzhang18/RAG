@@ -1,4 +1,9 @@
-Code for *Continual Stereo Matching of Continuous Driving Scenes with Growing Architecture*, accepted as ORAL at CVPR 2022.
+# Continual Stereo Matching
+Code for *Continual Stereo Matching of Continuous Driving Scenes with Growing Architecture*, accepted as **ORAL** at **CVPR 2022**.
+
+💡 **UPDATE!** Code for *Reusable Architecture Growth for Continual Stereo Matching*, extended version of CVPR 2022.
+
+## Overview
 
 **Reusable Architecture Growth**
 ![](./images/rag_framework.PNG)
@@ -31,7 +36,9 @@ scikit-image
 opencv
 ```
 
-## Code Structure
+## Supervised Continual Stereo
+
+### Code Structure
 
  - ./src/approaches: the reusable architecture growth framework
  - ./src/automl: neural units search and network level growth
@@ -41,10 +48,31 @@ opencv
  - ./src/utilstool: tool code for metrics
  - ./logs/: running logs
  
-## Command to start experiment
+### Command to start experiment
 ```
 sh run_rag.sh
 ```
+
+## Self-supervised Continual Stereo
+### Code structure
+The code structure of *self-supervised continual stereo* is similar to that of *supervised continual stereo*, and all the code is in the `src_self` folder. The main additions are in the `src_self/dataloader` folder.
+
+### Command to start experiment
+```
+sh run_rag_self.sh
+```
+
+## Extension to monocular depth estimation
+### Code structure
+The code structure of *supervised continual monocular depth estimation* is similar to that of *supervised continual stereo*, and all the code is in the `rag_depth` folder. 
+### Command to start experiment
+```
+cd rag_depth
+sh run_rag_depth.sh
+```
+### Pretrained weights
+The pretrained weights trained on the DrivingStereo dataset are in the `rag_depth/logs` folder. The code we have shared currently encompasses the training and inference evaluation together. We welcome any insights and ideas to translate the training code into a functional inference system in order to leverage the pretrained weights.
+
 
 ## Acknowledgements
 This repository makes liberal use of code from[ \[PSMNet\]](https://github.com/JiaRenChang/PSMNet),[ \[LEAStereo\]](https://github.com/XuelianCheng/LEAStereo),[ \[LLSEU\]](https://github.com/WenjinW/LLSEU).

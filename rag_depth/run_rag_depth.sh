@@ -1,0 +1,19 @@
+cd src
+python run.py --mode=search \
+            --device=0 \
+            --id=sup-depth \
+            --o_size=10  \
+            --c_epochs=100  \
+            --c_batch=16  \
+            --c_lr=0.002 \
+            --c_lr_a=0.01  \
+            --c_lamb=0.0003  \
+            --o_epochs=100  \
+            --o_batch=12  \
+            --o_lr=0.001  \
+            --o_lr_a=0.01  \
+            --o_lamb=0.0003  \
+            --epochs=400 \
+            --batch=8  \
+            --lr=0.001  \
+            --lamb=0.003  \

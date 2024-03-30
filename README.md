@@ -1,7 +1,7 @@
 # Continual Stereo Matching
 Code for *Continual Stereo Matching of Continuous Driving Scenes with Growing Architecture*, accepted as **ORAL** at **CVPR 2022**.
 
-💡 **UPDATE!** Code for *Reusable Architecture Growth for Continual Stereo Matching*, extended version of CVPR 2022.
+💡 **UPDATE!** Code for *Reusable Architecture Growth for Continual Stereo Matching*, extended version of CVPR 2022, accepted at **TPAMI 2024**.
 
 ## Overview
 
@@ -17,11 +17,20 @@ continuously predict disparities at deployment. We achieve this goal by introduc
 If you use this code please cite:
 ```
 @inproceedings{zhang2022continual,
-title={Continual Stereo Matching of Continuous Driving Scenes with Growing Architecture},
-author={Zhang, Chenghao and Tian, Kun and Fan, Bin and Meng, Gaofeng and Zhang, Zhaoxiang and Pan, Chunhong},
-booktitle={Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)},
-pages={18901--18910},
-year={2022}}
+  title={Continual Stereo Matching of Continuous Driving Scenes with Growing Architecture},
+  author={Zhang, Chenghao and Tian, Kun and Fan, Bin and Meng, Gaofeng and Zhang, Zhaoxiang and Pan, Chunhong},
+  booktitle={Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  pages={18901--18910},
+  year={2022}
+}
+
+@article{zhang2024reusable,
+  title={Reusable Architecture Growth for Continual Stereo Matching},
+  author={Zhang, Chenghao and Meng, Gaofeng and Fan, Bin and Tian, Kun and Zhang, Zhaoxiang and Xiang, Shiming and Pan, Chunhong},
+  journal={IEEE Transactions on Pattern Analysis Machine Intelligence},
+  year={2024},
+  publisher={IEEE}
+}
 ```
 
 ## Requirements
